@@ -6,27 +6,25 @@
 
 clusterOverrides:
   primary:
-    name: ocp-primary
-    version: 4.18.7
+    name: mj418-one-1
     install_config:
       metadata:
-        name: ocp-primary
+        name: mj418-one-1
       platform:
         aws:
           region: us-west-1
   secondary:
-    name: ocp-secondary
-    version: 4.18.7
+    name: mj418-two-1
     install_config:
       metadata:
-        name: ocp-secondary
+        name: mj418-two-1
       platform:
         aws:
           region: us-east-1
 
 # DRPC overrides (preferredCluster defaults to primary if unset)
 drpc:
-  preferredCluster: ocp-primary
+  preferredCluster: mj418-one-1
 
 submariner:
   instanceType: m5.xlarge
