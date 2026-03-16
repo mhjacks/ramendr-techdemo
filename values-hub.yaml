@@ -12,6 +12,7 @@ clusterGroup:
     - openshift-dr-ops
     - openshift-storage
     - policies
+    - aap-config
     - ansible-automation-platform
   subscriptions:
     aap-operator:
