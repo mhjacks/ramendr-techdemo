@@ -6,27 +6,27 @@
 
 clusterOverrides:
   primary:
-    name: ocp-primary
-    version: 4.18.7
+    name: mjrtd-one
+    version: 4.20.6
     install_config:
       metadata:
-        name: ocp-primary
+        name: mjrtd-one
       platform:
         aws:
           region: us-west-1
   secondary:
-    name: ocp-secondary
-    version: 4.18.7
+    name: mjrtd-two
+    version: 4.20.6
     install_config:
       metadata:
-        name: ocp-secondary
+        name: mjrtd-two
       platform:
         aws:
           region: us-east-1
 
 # DRPC overrides (preferredCluster defaults to primary if unset)
 drpc:
-  preferredCluster: ocp-primary
+  preferredCluster: mjrtd-one
 
 submariner:
   instanceType: m5.xlarge
