@@ -54,6 +54,9 @@ clusterGroup:
   projects:
     - resilient
 
+  sharedValueFiles:
+    - '/overrides/values-resilient-{{ $.Values.global.clusterPlatform }}.yaml'
+
   imperative:
     jobs:
       - name: clean-golden-images
