@@ -1,0 +1,7 @@
+---
+submariner:
+  ipsecNatPor: null
+  NATTEnable: true
+  cableDriver: wireguard
+  ipsecNatPort: null
+
