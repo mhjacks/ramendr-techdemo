@@ -2,6 +2,6 @@
 submariner:
   ipsecNatPor: null
   NATTEnable: true
-  cableDriver: wireguard
+  cableDriver: vxlan
   ipsecNatPort: null
 
