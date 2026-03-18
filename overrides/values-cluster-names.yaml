@@ -6,27 +6,27 @@
 
 clusterOverrides:
   primary:
-    name: ocp-primary
-    version: 4.18.7
+    name: mhjacks-rtd421-1
+    version: 4.21.6
     install_config:
       metadata:
-        name: ocp-primary
+        name: mhjacks-rtd421-1
       platform:
         aws:
-          region: us-west-1
+          region: us-west-2
   secondary:
-    name: ocp-secondary
-    version: 4.18.7
+    name: mhjacks-rtd421-2
+    version: 4.21.6
     install_config:
       metadata:
-        name: ocp-secondary
+        name: mhjacks-rtd421-2
       platform:
         aws:
-          region: us-east-1
+          region: us-east-2
 
 # DRPC overrides (preferredCluster defaults to primary if unset)
 drpc:
-  preferredCluster: ocp-primary
+  preferredCluster: mhjacks-rtd421-1
 
 submariner:
   instanceType: m5.xlarge
