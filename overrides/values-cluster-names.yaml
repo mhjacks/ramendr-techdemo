@@ -25,6 +25,3 @@ clusterOverrides:
 # DRPC overrides (preferredCluster defaults to primary if unset)
 drpc:
   preferredCluster: mj418-one-1
-
-submariner:
-  instanceType: m5.xlarge
