@@ -6,24 +6,24 @@
 
 clusterOverrides:
   primary:
-    name: mjrtd-1
+    name: mjrtd420-1
     version: 4.20.6
     install_config:
       metadata:
-        name: mjrtd-1
+        name: mjrtd420-1
       platform:
         aws:
           region: us-west-1
   secondary:
-    name: mjrtd-2
+    name: mjrtd420-2
     version: 4.20.6
     install_config:
       metadata:
-        name: mjrtd-2
+        name: mjrtd420-2
       platform:
         aws:
           region: us-east-1
 
 # DRPC overrides (preferredCluster defaults to primary if unset)
 drpc:
-  preferredCluster: mjrtd-1
+  preferredCluster: mjrtd420-1
