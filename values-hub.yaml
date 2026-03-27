@@ -14,6 +14,7 @@ clusterGroup:
     - policies
     - aap-config
     - ansible-automation-platform
+    - s4
   subscriptions:
 #    aap-operator:
 #      name: ansible-automation-platform-operator
@@ -177,6 +178,15 @@ clusterGroup:
 #      chartVersion: 0.2.*
 #      extraValueFiles:
 #        - '$patternref/overrides/values-odf-chart.yaml'
+
+    s4:
+      name: s4
+      namespace: s4
+      project: hub
+      chart: s4
+      chartVersion: 0.3.*
+      extraValueFiles:
+        - '$patternref/overrides/values-s4-chart.yaml'
 
   imperative:
     verbosity: "-vvv"
