@@ -12,6 +12,7 @@ clusterGroup:
     - openshift-storage
     - policies
     - gitops-vms
+    - boutique
     - external-dns-operator
     - openshift-adp:
         operatorGroup: true
