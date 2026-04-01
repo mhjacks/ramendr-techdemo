@@ -24,6 +24,10 @@ clusterOverrides:
         aws:
           region: us-east-1
 
+
 # DRPC overrides (preferredCluster defaults to primary if unset)
 drpc:
   preferredCluster: mjrtd-1
+  protectedNamespaces:
+    - gitops-vms
+    - boutique
