@@ -71,5 +71,5 @@ externalDataVolumes:
 
 registryCredentialExternalSecrets:
   windows:
-    vaultKey: secrets/global/privatevm-credentials
+    vaultKey: secret/data/global/privatevm-credentials
 
