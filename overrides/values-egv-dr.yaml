@@ -68,6 +68,7 @@ externalDataVolumes:
     type: registry
     url: 'docker://quay.io/martjack/windows_image:latest'
     registryCredentialsSecret: windows
+    size: 50G
     annotations:
       cdi.kubevirt.io/storage.bind.immediate.requested: "true"
 
