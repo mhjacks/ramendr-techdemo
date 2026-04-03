@@ -45,6 +45,7 @@ vms:
     count: 1
     role: desktop
     os: windows
+    dataVolume: windows2k22
     ports:
       - name: ssh
         port: 22
