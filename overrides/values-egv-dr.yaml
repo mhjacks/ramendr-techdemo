@@ -70,6 +70,7 @@ externalDataVolumes:
     url: 'docker://quay.io/martjack/windows_image:latest'
     registryCredentialsSecret: windows
     size: 50G
+    efi: true
     annotations:
       cdi.kubevirt.io/storage.bind.immediate.requested: "true"
 
