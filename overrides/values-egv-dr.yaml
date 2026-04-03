@@ -47,6 +47,7 @@ vms:
     os: windows
     dataVolume: windows2k22
     efi: true
+    machineType: "pc-q35-9.2"
     ports:
       - name: ssh
         port: 22
