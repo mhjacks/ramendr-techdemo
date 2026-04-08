@@ -44,6 +44,7 @@ vms:
   desktop:
     count: 1
     role: desktop
+    storage: 50Gi
     os: windows2k22
     dataSource: windows2k22
     efi: true
