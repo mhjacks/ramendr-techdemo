@@ -183,19 +183,14 @@ clusterGroup:
       name: s4
       namespace: s4
       project: hub
-      # chart: s4
       chartVersion: main
       repoURL: https://github.com/rh-aiservices-bu/s4.git
       path: 'charts/s4/'
-      # ingressDomain: {{ $.Values.global.hubClusterDomain }}
       extraValueFiles:
         - '$patternref/overrides/values-s4-chart.yaml'
       overrides:
         - name: ingress.s3Api.hosts[0].host
           value: 's4-s3.apps.sno6.blr.delllabs.net' # FIXME we should not be hard coding the FQDN but we just need it to work
-        # overrides:
-        # - name: myapp.hostname
-        #   value: "myapp.{{ $.Values.global.hubClusterDomain }}"
 
   imperative:
     verbosity: "-vvv"
