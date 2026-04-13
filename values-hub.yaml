@@ -99,8 +99,10 @@ clusterGroup:
       name: opp-policy
       namespace: openshift
       project: opp
-      repoURL: https://github.com/validatedpatterns/opp-policy-chart.git
-      chartVersion: main
+      #repoURL: https://github.com/validatedpatterns/opp-policy-chart.git
+      #chartVersion: main
+      repoURL: https://github.com/mhjacks/opp-policy-chart.git
+      chartVersion: remove_argocd_check
       path: "."
       annotations:
         argocd.argoproj.io/sync-wave: "5"
