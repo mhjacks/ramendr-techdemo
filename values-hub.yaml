@@ -197,7 +197,7 @@ clusterGroup:
         - '$patternref/overrides/values-s4-chart.yaml'
       overrides:
         - name: ingress.s3Api.hosts[0].host
-          value: 's4-s3.apps.sno6.blr.delllabs.net' # FIXME we should not be hard coding the FQDN but we just need it to work
+          value: 's4-s3.apps.sno3.blr.delllabs.net' # FIXME we should not be hard coding the FQDN but we just need it to work
 
   imperative:
     verbosity: "-vvv"
